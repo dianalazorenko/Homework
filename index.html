@@ -5,40 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Template Page</title>
+    <title>Types of selectors</title>
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <nav class="nav">
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a href="/" class="menu__item-link">Home</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="./pages/page.html" class="menu__item-link">Page</a>
-                    </li>
-                </ul>
-            </nav>
+            <h1>SELECTORS</h1>
         </div>
+        <div class="text"> 
+            <ol class="name">
+                <li><span>1. div + p</span> Обирає елемент p який розташовується одразу за елементам div </li>
+                <li><span>2. *</span>Обирає всі елементи</li>
+                <li><span>3. a:link</span>Обирає всі посилання по яким ще не переходили.</li>
+                <li><span>4. p</span>Обирає всі елементи p </li>
+                <li><span>5. target="_blank"</span>Обирає всі елементи з target="_blank"</li>
+                <li><span>6. a[href^="https"]</span>Обирає всі елементи a в яких значення атрибута href починається з "https"</li>
+                <li><span>7. a[href$=".pdf"]</span>Обирає всі елементи a в яких значення атрибута href закінчується рядком ".pdf"</li>
+                <li><span>8. p:empty</span>Обирає кожен елемент p без тексту та інших HTML елементів</li>
+                <li><span>9. input:enabled</span>Обирає всі увімкнені елементи введення</li>
+                <li><span>10. p:first-child</span>Селектор :first-child обирає всі елементи p, які є першим нащадком свого батька</li>
+                <li><span>11. p::first-lette</span>Обирає першу літеру кожного елементу p</p></li>
+                <li><span>12. p:first-of-type</span>Обирає елемент p, якщо він перший елемент свого батька</li>
+            </ol>
+        </div>
+    
     </header>
     <main>
         <section>
-            <div class="container">
-                <!-- Content -->
-                <h1 class="title">Home</h1>
+            <div class="container2">
+                <h2 class="title">About selectors</h2>
                 <div>
-                    <img src="./images/Placehold.svg" alt="Placehold">
+                    <a href="https://itwiki.dev/front-end/css-reference#section-selectors"><img width="670" height="400" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACjCAMAAAA3vsLfAAABI1BMVEX////+/v5xq75vrbxzp9Bzp85zqcZzqchzqMpzqsJzqMxzqsBMTExzqr7i4uJzqcTs7OzKysr1/P9JSUlTU1Pr9vxcXFz09PRVVVVjY2Pw8PBqamqPj4+mpqb4+Pjc3Ny5ubmVlZV9fX2Jv9jLy8uFhYU3jc90dHSxsbGenp4xjsqOvduUlJQxlcE0mb/BwcEvh9Evksc1k8Quis9AQEBqsMsnhdAsmb3e7vWQucvJ3+iewdGqytTU5PKSwtaQv9231eyKt99lodZYocNSmtZtq9uSv+WmzOSCwNWavtiEsMy+2ucng9bt8/yzz+PX7feexMy4191kn7HN3OOItb5jm7+EsMWbu8zG2e2Kwc91sdp3na1Sa3FGgK5LeJpSY2VHiK09TTCOAAAXqklEQVR4nO2di3+aSNfHB3PVTBQFud+kEjRJo9sYYzRNr2mbuJvubrfZbt+nz+7//1e8ZwAVEQwimOzn8beNAnIZvpwzc87AsAgtImotVwtRW2MbaY0tkdbYEikaT/B71QVZwTGTa40tkdbYEikJtkzO61+IbTzhL2440LUmWmNLpDW2RFpjW6Fm2VKVVevBi/v0DGC6RL3Xb96+Pzw8PDiAf55gjsxP9JMrb/oFEZl/MaXnY5349Nz5d+JbSibenV0Nq/EL+RTkKxH1+vq0C2qDTqfl4gvRT1EasfPx85H0TwK38/PnJ2d9UoQHCjn1+2OSnGAbvjhttwk1D9OU4iEbGZ4zGcorQueg5w64+YUcX2H/zGNoVKLq99M2EHt//f3o1dHR0bOjh/WMyPtaUmfvgNvJyVUlnMVM6/YYPkuFNLMvD7vt7sH1h6Pbrc1pbW2RP6LdoHZA2zslv/L5PPztjbW/nwtqAxRcdv/X1dn58/OTd71xCYPfM4HCg+cX57yXw/b6ADzz+tUbB5JHaaxCYQaYi2wG27bHzkXmUtzzMxxpAnCs+2dnxOA+/4uwvYZa7fDDm1liDjRXUdimNbY5T3t7E3BTyGawbWxcfII6zuH278D2Dai9/VC4Xh5baRlsG7mrd2BvvUlVli62JXOAILbqQbv79tWkLksDG8GVn3bRWWwz6IDbyfm7SrxTSHbyyRXARl1320Dt+glg29gAbifP4p1CtpDCj+nD9rH788EHf8vpR7ask8646APY9q8ggIuM36ZOIWNK4Qf1Dkyh6mG7/argAHsC2DY2PkGy9aCbPgq2Kb1pd68Lmwta285OZtguzk6ef0Qx+4URClT0UT9Gbp1QvcO230UfH1vuL7dVeNrYXv3cfrO5MLYMnXRj/+zk/O6JY6sctE+Pnha2jauTk7OY925Wjs3bbNhtT9VsQXSFQhJspXEAMp2fhoALwXZ/dj6KecPOdC6EeLSXxva9ffphhtojYyON6ccoAE8BG0W9bx+8mYdtMSeFZD4kK02CLdJLnwI29Pm0ex3sKZrCtulh87qNCgFsuzsBWwvLShfGtnF2clKJ9NKUsS3Gz137dbcbYmybI2I3d8O7W9Iw3JKJ3Z3dwu3dHUwUPGgXw+EgXxqjK91Xe2HJ/N7+Xn4RbLlP0ZXbPArOv1Vgu+kG2tExNvgoOH2GlZtC4YaE7ZWPuzs35E5J5c5z0G/keNWr0tjcLlAlBNug+rK0kLXlnp0/HybAtjJru/75MBLb7i9ACHhVtrYqqAIzvZ3tHqpUK6i67VA7cn8fEu90K7kLROW9/koA5sLbK12i3u9gc0DLYTbNLdRJIQS5esrY3nbfRzjp5iaEnN92dm7A2m5QZffr7ef7nVuELnZvXw5cYxui3nZp0ANcOxf9/qWLDZDlh/3hfSlfyu9ffulflC56qPrbYC+Xu+v3B/v7exfDy/3+X7m9Yf9yPwLbX+cnn1aFbTG5m71vR2LbqqLeFmkKCgTbbQHaBILtz3dQs5UItcIQVaFN2AVcA7LH3s4OOGm+dOs48kU+l3PufV4OyG2Vfj7vuHx/P3eJpC/o171fyFr7odQ2/np3HjfgfQxs1MEcbBT6021Gt4BW5eUNNJ/b0L71BtteIwoJd3V4U9reyVfQ52EF3e04TtqHpT3UI5wq/R4aDCqU1vvt974zhwaADco7AM+97PUirO3+iWM77L6dzRHclhRY3XrYtr6RLaoXW4U7MlHxnLTk2E/vdvsSVUtfB+CypEnIU+j+3V4F3d+DR+f3B27dtp8DVL/vA9LfL2Gbi9xvqJeDpeHm9tStDbDdPogNwN28hLofXHL3ikxUbr0A5K4Hh35ZGiLpt/4XVHGwwV9/2K+gCwKzBKFH3sE2QBVoSuFHsDb0Rw6mYL0/ouq2FWJLwI96330fgW0Tms8h1G0kENmFL6jJEPhpobBzR6G7cYZwD76X7zvHrrjYbtwZ9OslaTGgAd1zWtIBqkIbeo8owFbdyO3nfiP896KwxU7mHwMbaUmjrG0TgNwSXLebu8Pbr4WvFcB2d/N192sP3TlJwu5wb3v7FhrPO6jJSqX7EmkSSkDmPl/av4V2opLPb4+wgXXd74ODVuCv6oYelxV0GYGN3FB4wtg2uwcRcRt4KYV++XYH0cPmR1QZDvrgtNCk9u/A2ga7DjWo+wdQ75fAny/vB728E4BsV1H//uLzn3u5Cur9eVm5ByetXA72oGEeAKihh+3X3q8bX6KwfTo/f6Jxm6tX3dPI5Grro7vOy60bt2+///XInejtenGbo8vt3b7zHMulg21n4My8zO05YQkaQm1HApA/nbkqCUCqv+f2P4OLIuqPqOTqfKVZwqLcXnfbb0JSeZfd5k2vUql+3IUa7lu1Wv22s7W7cweL+qVtp2KDwLdaqUI9ly/dwQTgg5wU/HIA63whHUcwUR3ul/aGlSqEuxdk041cblD9/DskDEPYZBBqa0lz0jlpfsT6ix/C3e7zaVgv5YQcQUZaUmgVCs5UwXcbYcet4UhWBdEI/O3mARbpOwJk8FGCBgGC3r0SJAOQkeb27nOzz9KEYjs7j+wBSVOJsVUOw7MrH7lRZ5tHrTDpNQJ723HtzvvcJv1G226fm5Ob5kd3mkkaD8k8yUpz+5Cdkv+AJWlRw27CnCdpSBOc/lwF1/TPXnfbIb270/VcYUp+cwvp3w1085ZKwYeNRun82OzCWgRf727YWYQ+GBJKJJLO4th8C8i9hO9RlVsEtiC3eczGD23thyjKUf84Oz/vPT62eSwrh+2DV3OQBe8oFB7oFp/GNul1C4EVWb89S8lHZ1iGrZAMG/rQ7YZFbo+GLQcNwslJgvBjtdh6p4G78gtji3g00P/k0eyDlNHWlrs6PzlPpR3NEBuFjrrd72EJVmJspeWw/QU12x1KHBwshC0hO6LqQbf7KrRVCLtbGoptJ3j/KojNvX8VD9uz8+fviLGFXeMZIgnPebT1Mrv42G0fhrYKCbGFOOkC2K5OSM22QmyJd/O2230b3iysHht5evfZyh5fm3hrgo17B+3T61BuK8dGqL2rJLeABRVaE8beut89bb8N89OQhxqywDZCt0+e3CVJfNp05o3lmnLUxa7X6267+/7DbHuaCNviTYKH7Z7UayefUeqWlhU2Mp4Dsqyj2YFDc7BFhSBzseUisJF47ezk3KWWIjav5soIG/p28HO7ffD91VFhPrbQp47mOanvAZpctLXd3185Q4e8MVfpKWNsqLp5Sgarvb9+8+ro6BUoxhA/ovt7Z7Af/Pfq6Mo3Zu//nJF/U3txhgO665DPK1fOxNk7Ymknn+YOxk2sDLEhNDwkI3C77YPTg9kRpYf/+QGfs+NMD/7793h46Yv/vBiPLP1HePETGVsaHMt88vc/o3G4M4NKz4YomzGimWJDldfXB+7Y5Rl1T//+4Y1pDgzN/e/fP42xCT9Gw3MPfwgvxsN0X4yG6BJW3D8z43Pdsd9nw0q61dpE2WKDrXof37x1RsnPmBv3YzxqeWoss9/a/v7hs7bnM8PngduL58I/M+PpoUo7el1NXOgYp/UwNt+CBLsnqlTDxJVDF1cNcbx+j/0yXvyF6YWu3mO+zC6MMTYtG6WDbbRt2DKhHr5ySxxfTBoXx4t1RgtdnWf0pMVaQHzNOQpPj06FlkLXSxVb6AG4CGyGOMb8KNjqltWYORTdaZAvhfEKpDFmKI3/WWwGIyrYCC71sNUE2p3XBCV060fA5u0esI0Lu3psmiAWka4jjQZ/pGhNoimN5gk24qCSTvESmUdFGjk/IrImWeCdw6qxUU8DW71Tc44sM4zF04yCcdPu2DBlY6yiGqs1ZZuRacQqPGsJTA1JcgcztfFZZI1NY6dPNyk2Ckc4ezIZjEEyf1NoqZ0GzXItEddUxpAYrmyzUpPlm8xxg1GRoGic0DIZWmXrJjcuZubYaKY4NT/BJk/W8WErMuFtFxKNNIvVItiQhBVo6i0aN5EiSEVGlToqMjr1JuabLM3jY8RaPFRvrY6uckVLGF/RzLG1hIjdqeZ40o9NCmAeSwmvnJMWi2kCNpp8clYR/PLYw9YARiNsrA9bHTNgfCPNYPP1xqdSmVhRZ2s1x5N+bBQbFeexfPgPC0nymkioxHio+VkLLO6YZibYmkhldOKkAs0Lx0iwNBebItd9PCbMfLfx3e/icQrFLDIRFCixNZ72Y0O2GrI2IpWkkUJ5aMubUBhTFQwF12ymTrARJ+2oEsPWBJEaOalCrI11sDVZTrQCLSlSLQmpiqI09Qm2SDtZRJYd4aNFnzNOYVPlkLWdH7iIWm8RSaPLSKmyXON5RbYNaCUbSIVmVDR4uWHbOsxoDVvSZBXZTQ2uY10sqpxRYxqj3XjYrA6NLBZjzKojbDpOwdqMKGObojOFrdiJqNx4zlq+1pVYe1KLu1/ex/if95v332ixYFLlThCbwgA2oaw3OGjn3R3ZbA0tKwPq2vBT5TljMjOFDclRx63j46W5SYLP1wMdHHN3bjIcK9LjVf3YwHVb2HN+gxWWxUbXSHwYXpiG4Kvgp7G1GHpmde8XbC/bTEksN/H1KWxhnUS+ZVrLMCblCmLTONEJTniO46x6eQkZCss2gnfJRyrihm9uGhuSTRQhXWbMRivkYHVHDxeq3uK4iTksgs2bj8BGiZyDrQFXRcDLiJVVGkV0u2ryVEsRwKYzDRQhzbDZ5UoF5jA29EWxBZ8knGDjBdn5TYK9K8VlREdXFbzJTflhABtqRHODtHupUukCJzQjd/4ANt8PAWxN3HRXTaFui5DWkoXpKiqIDSJOJaI5XVaS4NVCsfQQNsvB1mya7MgOUmlJQwTQsKlPF2cGGzI4nA04aElb836nNFRvTXzxIWwkbiO+P2mqdJwBNs0AaHUq0FDMYkN8g2ObUS3qEpLYyPbGkW1r5sQcI+sZD1u9RSiXW7o2WdVKI7maEkBjrJD4NwQbnKAqsGoKeUFgr7PddkUoEm95NiiKmin7vFi3Qo0+kMb7Rafa5eBBC427QrHBYsgD1TTyd/8+p0+KnHodgv9ip+lmBcUiAmzucCLisY1OGTmuiwLbRfcUpdsLbYiMqYdHJBHY4IdjzM3eJ1lGkt/x+RpcFwkLrC0KgqxzTbZumYDNYi1NxwY6Fuvwo4KagqAGArg52FIUD9AcSws9WiQ28CAFc0aq4HwyRMPEuoqVuoGtus6yXNmUkYmtY8bQwQYtFg7f1FuM2gzk1pl3UxJpDRmHu6erOdhI7YLljMDx9XqNqeuMgeiOCpmLxSMbsHE8jxUScyssT/oiTK5lMNPdWSvAxjfEudAewAbgTGy3svCIMosFXCeAHGwkyCbYZIoSLB82WwBNB+CZY3sY2oPYoNa2sV1PH5wp0oBF73jWRiyKYBM1z9oszBsdwMZJlBZWt2WGLQ60GNjAMGzGTPXWFZHFQRhZLzJWS8JmSx9hw0qtY0jYVjHL1zu1uso0y0rg/luW2LQGxygx2uMY2BDVkp2WOE3pHDbBCS3GRDXG1kdOatmMoiEVi8espNmdGmVhRgzcf8sOGwT6MTOkONgIODEi7kss8D3ifc6f5nxBhAYANJIgaBSa/Bhgkhk2KTa0uNjc2C+rHN8Jb2OfeUbY4lsaUVxsZL8CW8sgVV1UmWCTVI5dxCriYwNwkKpmkeOHKuOnKacE0HAtjEPkEKVFsJFUFXKd1HP8UK0OWyS01LARcJCqppzjh2pV2EhvT6R7pobNTVXTzfFDtRpstMqyEZY2f7uFsZFeMixmluOPtApsUlNgkrVyi2MjRdQtRp7bwb28ssdGN9nELVwSa3PAmVjOIFX1HyRbbKR1Sx4WJMHmqm4zduqp6kTZYhtZWtILnxybAy79HH+kLLEt457eHpbA5uT4Kaeqk31nhg1iqKWj9qWwQZFJj3smqWpm2Bo4hYh9SWxODxWOeAhzKcXGRi2GrdFpppDmLI0NwKlM/Ec7YivWCysov2Lt1vd84TJKARtCRsdYfidJtDA2iU3nxn0q2JCayl4W18LYjsV0Ys10sFG29fBKGWhRbDRTTmeIejrYUH0lQ07HGlFaFFsz6lH4RZUSNmQq2bxpIFwJsVH+h72XUlrY0hkoE1cJsemRT3QvqrSw8VEDjzJRQmy+kY1LKi1skQOPMtEMtnib1VJruFLD1rRWWLklxGamdmlTw2bITx+bnUqGQJQatlZq9UYMJcVmpFWAfyc2ooUzhDU2okfFJmE3lFm6XhphW1kFtxA2qgEyRMWAr/Jyx6VV2IcqqGRXS4WBOimSIhoNY8kdLaTFrK0oYpblBIFlrGXjcgOzgkB2hY2lbIRSRzuaP8wlXS3opLxJhspxQgoxSF0UyJ6i3ukTX2XOKZK8ynx+0bqNqpGRk6lc16INRmKn0CjossCx5moeqvG0eJPQYMWUMkDewkv7uiPaxEr2D4b4laAlrafWmUql9TCHZqSzn3iiAlrlsf+9ClJbY4ulNbZEWmNLpDW2hTWDbI0tjtbYEmmNLZEWw6bVyxDjasdJU1Fdd485tdBQaF4J7HHelSvW9cnPkmL4f5Pqdd6/ua5km9fHwlYXMYY8SBPmvxQiUjRmSZ9OXYasrCyPUjOlU5Tw9B55O/rxoSbG7OS1G0XG/86AuoAxZyBpvHm5k8FzSD7FwaYLgqmIjK5x5CS9txVozldwBFy4DNZ5C1iLKZOPlvO6AY3S67wEF4KnvPcPwB/tvteLCslUdSw3baburErWZI6dLd2TkLmagmuIZhX3GStNggyQHMQppDNwL90aKA42izx6V2wgHrBJx7J8DGfVkG1VQ6psN2KURxZFm3TWCbJVlAXZRIpZl/mGTUuC1RDBhCgTcJkmMgXRLqK6LSoz/RkO7jKFmrIEhy3S+FgVR+NMaQE2r0vO5nRLblmtotxCit2SiWnrplhTU+5WioGNH70diGCjWVHEClx70xa0MmPKXIzOTabRZIuoKHCcXeQ4TqZMTsR8EwM2mGM5ieIAKycimeOEYhGLNp6pDsrYbhEjVLCEahiwkS1F3isY5/TswuYcbWCZcUYkm6T3kkOayMqigNPDFrNJKI7ec+M4aVHjZRY1wF108u5QKkZ3iIqLOnlvm4ENyf0wBbAGF5tONZkG8rAVBYtHCiCuzbxOVpNZlgMDV9gRtqJ2zLSkWrNZhyNg1qKRzio8ebeVKpERySZuSTIjlcF7eXv12GjW9koO2DTVVmxW07Fg6aiOhRjjIClZrJfBxCZ1G7LJQxs1gs1ETjXlYZOgckKiqKoKM3OvApxagNpijE0h9Z1a7OBOA7zX4liZInUbXJea+yo4k+XRMUOTK0wu8FKops4nHjZNdN7rTjlOSt4dLUN5WjILSw0ZP/yaUp0VWPin+7G57z4bYVMcbKLo1OlI5EzbnB2sQZEG0x5jI+9x1HGTbzQaznu6aBsWOtjIAVxssCZDt8hQeGv11gbnZ9J8S5aItdkiIq/JkIrk/OninFeejlVjlVpNYZtkC428nVojr4rwrE0ogoc1ABVdZIm1WRqcIo00PhjCFWVdKwJdBZd5mwVrE2komBudUaahUbAZDZtTAWzAUmgqLLt6bFCZcSKLyyRus1i1KbBaEysWoyusYka903osjSNPEVKiSNUxcIcPG+q2MTbOFiCoM1mRE0TycjqO1rGoiDMPdaiMIHMAuIE5USDYYEuW453IQsdYFKEqIe+2oyfYoPE4huIZAsQui1nb3CfF42KDkBzawDLUygq5b6Icy1rR4jgVmnZOfPCBEN1dRRV1zeQU5HwoMk+W0JKsqJwTJMicYdrk1cQQX7QgSKnPFLxlc2KTIi9qrDUhABFrNY6ELpQ76E/koElATWj0W2KZHNSAg0ioCTbJS7rzer8FlA428kKq0f/SlJLcokqOG0kP30IZ7ZeEqRIpkESNwlsncJXcuJl39+/MafTsPQayoXMwshPNt6Ur3i0ILHJfFEO5ByGRrn3cOB61ajGVFjZvZ2mJmrO7tDsUNJPFeMH7iqli+7eK1otp3g78X8GWstbYEmmNbSmtsSXSGlsirbEl0hpbYq2xJVOG2CLfcfRkFVXg/wcFJZJivNNQhAAAAABJRU5ErkJggg==" alt="Selectors"></a>
+                    <button id="btn2">Click</button>
                 </div>
             </div>
         </section>
+        <section class="section">
+            <h3>Cantry</h3>
+
+  <div class="element">Franch</div>
+     <div id="element2">Germany</div>
+  <p class="element3">Niderlands</p>
+  <p class="element element4">Spain</p>
+     <div class="parent">
+    <div class="child element">Italy</div>
+  </div>
+    <span class="element6">Georgia</span>
+    <span class="element7">Poland</span>
+  <p id="element8" class="element8">Belgium</p>
+     <div class="element9">Turkey</div>
+  <p class="element10">Sweden</p>
+
+        </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <h2>Footer</h2>
-        </div>
-    </footer>
+    <footer></footer>
     <script src="./js/main.js"></script>
 </body>
 

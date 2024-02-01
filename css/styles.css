@@ -1,0 +1,39 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  background-color: #e6feae;
+}
+
+.card {
+  border: 1px solid #070515; 
+  padding: 25px;
+  text-align: center;
+  width: 200px; 
+  height: 226px;
+  background-color: #94dadf;
+  margin: 5px; 
+  margin-right: 3px;
+  margin-left: 20px;
+  overflow: hidden;
+  
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  width: 150px;
+  height: 150px;
+}
+p {
+  font-size: 18px;
+  color: #000001;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+h3 {
+  color: rgb(0, 0, 0);
+  background: #874f8757;
+  text-decoration: underline;
+}
+

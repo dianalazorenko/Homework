@@ -1,7 +1,7 @@
 body, .card-container{
   margin: 0;
   padding: 0;
-  background-color: rgb(153, 150, 150);
+  background-color: #E0E0E0
   
   
 }
@@ -9,6 +9,7 @@ body, .card-container{
 .card-container {
   text-align: center;
   image-rendering: auto;
+  
 
 }
 
@@ -17,14 +18,21 @@ body, .card-container{
   padding: 25px;
   text-align: center;
   width: 25%;
-  background-color: #b0bbbc;
-  margin: 55px;
+  background-color: #C4C4C4;
+  margin: 20px;
   padding: 0 25px 25px 0;
   overflow: hidden;
   display: inline-block;
   height: 226px; 
   width: 200px;
- 
+  margin-bottom: 10px;
+  vertical-align: middle;
+
+ }
+
+ .card:hover {
+  box-shadow: 3px 4px 7px 8px #cfcece;
+  
  }
 
 .card img {
@@ -32,7 +40,7 @@ body, .card-container{
   display: block;
   width: 130px;
   height: 130px;
-  background-color: grey;
+  background-color: #E0E0E0;
   margin-left: 50px;
   margin-bottom: 15px;
 }

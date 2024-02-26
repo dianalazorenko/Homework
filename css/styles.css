@@ -38,6 +38,7 @@ p {
   height: 67px;
   font-size: 16px;
   color: #727272;
+ 
 
 }
 
@@ -70,13 +71,7 @@ span {
   color: #727272;
   max-width: 500px;
   
-}
-
-h5 {
-  background-color: #34547A;
-  height: 250px;
-  margin-top: 0;
-}
+} 
 
 .media {
   background-color: #EEEFF1;
@@ -106,3 +101,57 @@ font-size: 13px;
 color: white;
 font-family: sans-serif;
 }
+
+ .textabout {
+  text-align: center;
+  display: block;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.textabout2 {
+  text-align: center;
+  display: block;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.items2{
+  background-color: #34547A;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.item-info {
+  width: 71px;
+  height: 44px;
+  margin-right: 14px;
+
+  }
+
+.item-img {
+  margin-right: 2px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.item-info-text{
+  margin-bottom: 5px;
+  margin: 0;
+  color: white;
+  font-size: 19px;
+}
+
+span {
+  color: white;
+  font-size: 13px;
+}
+
+
+

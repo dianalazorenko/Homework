@@ -1,28 +1,57 @@
-table {
-  border: 1px solid rgb(0, 0, 0);
-  width: 700px;
-  height: 280px;
-  text-align: center;
-  padding: 0;
-  font-size: 20px;
-  background-color: #f8f3a9;
-}  
-
-thead {
-  font-weight: 400px;
+html {
+  background-color: beige;
+}
+.menu {
+  width: 100%;
+  border: 1px solid #000000;
+  background-color: rgb(228, 143, 180);
 }
 
-tbody tr:nth-child(odd) {
-background-color: #f2e63d;
+.menu td {
+  padding: 15px;
+  border: 1px solid #000000;
 }
 
-tbody tr:nth-child(even) {
-  background-color: #3a8bf4;
-  }
+.dropdown {
+  position: relative;
+  border: 1px solid #000000;
 
-  td {
-    border: 1px solid rgb(0, 0, 0);
-    padding: 5px 5px;
-  }
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  border: 1px solid #000000;
+  top: 50px;
+  width: 406px;
   
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #24011f;
+  background-color: rgb(215, 228, 190);
+  border-bottom: 1px solid #000000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.sub-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 50%;
+  width: 150px;
+
+  left: 100%;
+  border: 1px solid #000000;
+  
+}
+
+.dropdown-content:hover .sub-dropdown-content {
+  display: block;
+}
